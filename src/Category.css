@@ -1,0 +1,70 @@
+.category {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    max-height: 400px;
+    min-width: 100px;
+    background-color: white;
+    z-index: 1; 
+}
+
+.category__title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.category__4in1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.category__2in1 {
+    display: flex;
+    max-height: 200px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.category__subcategoryLink {
+    color: black;
+    text-decoration: none;
+}
+
+.category__subcategory {
+    display: flex;
+    flex-direction: column;
+    max-height: 100px;
+    width: 100%;
+    margin: 10px;
+}
+
+.category__subcategoryImage {
+    max-height: 90px;
+    width: 100%;
+    object-fit:contain;
+}
+
+.category__subcategoryTitle {
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.category__seemore {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    color: #558fbf;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+    text-decoration: none;
+}

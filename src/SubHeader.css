@@ -1,0 +1,43 @@
+.subheader {
+    background-color: #1e273c;
+    display: flex;
+    align-items: center;
+}
+
+.subheader__link {
+    color: white;
+    text-decoration: none;
+}
+
+.subheader__burgerMenuIcon {
+    width: 22px;
+    object-fit: contain;
+    margin-left: 12px;
+    margin-right: 2px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.subheader__optionLine1 {
+    font-size: 14px;
+    font-weight:600;
+}
+
+.subheader__optionLine2 {
+    font-size: 14px;
+    font-weight: 800;
+    align-self: center;
+}
+
+.subheader__option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+.subheader__option2 {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}

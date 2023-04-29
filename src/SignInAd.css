@@ -1,0 +1,40 @@
+.signinad {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    max-height: 150px;
+    min-width: 100px;
+    background-color: white;
+    z-index: 1; 
+}
+
+.signinad__title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.signinad > button {
+    display: flex;
+    width: 100%;
+    background-color: #ffcc31;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #f4d350;
+    margin-bottom: 20px;
+}
+
+.signinad__buttonText {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-left: 115px;
+    margin-right: 115px;
+    font-size: 12px;
+    font-weight: 500;
+}
