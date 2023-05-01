@@ -66,7 +66,7 @@ function Header() {
                 </div>
             </Link>
             {/* Cart with numbers */}
-            <Link to="/login" className='header__link'>
+            <Link to="/checkout" className='header__link'>
                 <div className='header__optionBasket'>
                 <img
                     className='header__basketIcon'
