@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.css'
 import { Link } from 'react-router-dom'
+import { useStateValue } from './StateProvider';
 
 function Header() {
+  const [{ basket }] = useStateValue();
   return (
     <nav className='header'>
         {/* logo on the left -> img */}
@@ -71,7 +73,7 @@ function Header() {
                     src='http://getdrawings.com/free-icon-bw/shopping-car-icon-21.png'
                     alt=''
                 />
-                    <span className='header__optionLine2'>0</span>
+                    <span className='header__optionLine2'>{basket?.length}</span>
                 </div>
             </Link>
         </div>

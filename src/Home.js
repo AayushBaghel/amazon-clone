@@ -9,7 +9,8 @@ function Home() {
     <div className='home'>
         <img
             className='home__image'
-            src='https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2023/BAU2023/ATFGW/Home_mela_Mar_3000x1200_Unrec._CB590930664_.jpg'
+            src='https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/MayART23/GW/GW_HERO-PC_PEA_V1_2X._CB590992786_.jpg'
+            // src='https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2023/BAU2023/ATFGW/Home_mela_Mar_3000x1200_Unrec._CB590930664_.jpg'
             alt=''
         />
         {/* Category id, title, image1, image2, image3, image4, title1, title2, title3, title4 */}
