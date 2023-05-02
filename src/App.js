@@ -5,6 +5,7 @@ import Header from "./Header";
 import Home from "./Home";
 import SubHeader from "./SubHeader";
 import Checkout from "./Checkout";
+import Login from "./Login";
 
 function App() {
   return (
@@ -20,7 +21,11 @@ function App() {
           </div>
           }>
         </Route>
-        <Route path="/login">
+        <Route path="/login" element=
+          {
+            <Login />
+          }
+        >
         </Route>
         <Route path="/" element=
           {
