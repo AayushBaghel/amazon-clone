@@ -4,6 +4,11 @@ import { useStateValue } from './StateProvider';
 
 function Product({ id, title, image, price, rating}) {
 
+  let rupeeIndian = Intl.NumberFormat("en-IN", {
+      style: "currency",
+      currency: "INR",
+  });
+
   const [{ basket },dispatch] = useStateValue();
 
   const addToBasket = () => {
@@ -27,8 +32,8 @@ function Product({ id, title, image, price, rating}) {
                 { title }
             </p>
             <p className="product__price">
-                <small>₹ </small>
-                <strong>{ price }</strong>
+                {/* <small>₹ </small> */}
+                <strong>{ rupeeIndian.format(price) }</strong>
             </p>
             <div className='product__rating'>
                 {
