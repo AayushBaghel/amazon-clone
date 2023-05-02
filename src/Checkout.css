@@ -4,6 +4,7 @@
     padding: 20px;
     height: max-content;
     max-width: 1500px;
+    min-width: 1300px;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
@@ -14,6 +15,7 @@
     padding: 20px;
     height: max-content;
     max-width: 1500px;
+    min-width: 1300px;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
@@ -24,6 +26,7 @@
     display: flex;
     height: max-content;
     max-width: 1500px;
+    min-width: 1300px;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
