@@ -2,9 +2,25 @@ import React, { useState } from 'react'
 import './Header.css'
 import { Link } from 'react-router-dom'
 import { useStateValue } from './StateProvider';
+import { auth } from './firebase';
 
 function Header() {
-  const [{ basket }] = useStateValue();
+  const [{ basket }, user] = useStateValue();
+  const handleAuthentication = () => {
+    if(user != null) {
+        auth.signOut().then(function() {
+            //sign out successful
+            console.log('signed out');
+        }).catch(function(error) {
+            //An error happppened
+            console.log(error);
+        });
+    }
+    // if(user) {
+    //     auth.signOut();
+    // }
+  }
+
   return (
     <nav className='header'>
         {/* logo on the left -> img */}
@@ -52,14 +68,14 @@ function Header() {
                 </div>
             </Link>
             {/* Sign In */}
-            <Link to="/login" className='header__link'>
-                <div className='header__option'>
-                    <span className='header__optionLine1'>Hello, sign in </span>
-                    <span className='header__optionLine2'>Account & Lists</span>
+            <Link to= {user? "/login" : "/"} className='header__link'>
+                <div onClick={handleAuthentication} className='header__option'>
+                    <span className='header__optionLine1'>{!auth.currentUser ? 'Hello, sign in' : 'Hello, ' + auth.currentUser.email.substring(0, auth.currentUser.email.lastIndexOf("@")) }</span>
+                    <span className='header__optionLine2'>{!auth.currentUser ? 'Account & Lists': 'Sign Out'}</span>
                 </div>
             </Link>
             {/* Return and orders */}
-            <Link to="/login" className='header__link'>
+            <Link to="/" className='header__link'>
                 <div className='header__option'>
                     <span className='header__optionLine1'>Returns </span>
                     <span className='header__optionLine2'>& Orders</span>
