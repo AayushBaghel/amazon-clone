@@ -3,9 +3,10 @@ import { useStateValue } from './StateProvider'
 import './Checkout.css'
 import CheckoutProduct from './CheckoutProduct'
 import Subtotal from './Subtotal'
+import { auth } from './firebase'
 
 function Checkout() {
-    const [{basket}] = useStateValue();
+    const [{basket}, user] = useStateValue();
     return (
     <div className='checkout'>
         <div className='checkout__adContainer'>
@@ -38,6 +39,7 @@ function Checkout() {
                 </div>
             ) : (
                 <div className='checkout__notempty'>
+                    {/* <h3>{auth.currentUser?"Hello, "+auth.currentUser.email.substring(0,auth.currentUser.email.lastIndexOf("@")):"no user found"}</h3> */}
                     <h2 className='checkout__notemptyTitle'>Your Amazon Cart</h2>
                     {/* List out all of the checkout products */}
                     {basket.map((item) =>(
