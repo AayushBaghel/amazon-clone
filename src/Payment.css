@@ -25,6 +25,6 @@
     flex: 0.2;
 }
 
-.payment__address, .payment__review {
+.payment__address, .payment__review, .payment__method {
     flex: 0.8;
 }
